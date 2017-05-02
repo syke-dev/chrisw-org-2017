@@ -19,3 +19,13 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+
+# Where things are
+exclude:      ["_jekyll"]
+
+source:       ../
+destination:  _jekyll/_site
+plugins_dir:  _jekyll/_plugins
+layouts_dir:  _jekyll/_layouts
+data_dir:     _jekyll/_data
+includes_dir: _jekyll/_includes
