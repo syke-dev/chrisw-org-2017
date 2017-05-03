@@ -9,14 +9,34 @@
 		<title>chrisw</title>
 
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/landing.css" />
 	
 	</head>
   
 	<body>
 	
 		{% include navbar.html %}
+		
+		<section class="white project">
+			<div class="container">
+				<img id="me" src="http://blindman.chrisw.org/media/ChrisPlaying.jpg">
+				Welcome to the portfolio of <b>Chris Williams</b>
+				<br><br>
+				I am a TODO
+				<br><br>
+				Questions, comments? Feel free to contact me at
+				<br><br>
+				<span id = "contact">{{site.email}}<br></span>
+			</div>
+		</section>
 
-		<section class="gray">
+		<section class="dark-grey separator">
+			<div class="container">
+				Professional Projects
+			</div>
+		</section>
+		
+		<section class="gray project">
 			<div class="container">
 			
 				<div class="title">
@@ -76,13 +96,13 @@
 			</div>
 		</section>
 		
-		<section class="dark-grey">
+		<section class="dark-grey separator">
 			<div class="container">
 				Student Projects
 			</div>
 		</section>
 		
-		<section class="red">
+		<section class="red project">
 			<div class="container">
 			
 				<div class="title">
@@ -122,7 +142,7 @@
 			</div>
 		</section>
 
-		<section class="white">
+		<section class="white project">
 			<div class="container">
 			
 				<div class="title">

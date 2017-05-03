@@ -8,10 +8,13 @@ body {
 
 section {
 	position: relative;
-	padding: 50px 50px 100px 50px;
 	width: 100%;
 	// min-height: 380px;
 	margin: 0 auto;
+	
+	&.project {
+		padding: 50px 50px 100px 50px;
+	}
 
 	.container {
 		max-width: 1128px;
