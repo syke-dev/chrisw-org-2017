@@ -1,0 +1,318 @@
+<!-- Includes (place in actual page) -->
+<script type='text/javascript' src='http://www.chrisw.org/web/shared/jwplayer/jwplayer.js'></script>
+<script type='text/javascript' src='http://www.chrisw.org/web/bloodtide/units/units.js'></script>
+<script type='text/javascript' src='http://www.chrisw.org/web/shared/jquery.js'></script>
+
+<style>
+
+.break {
+	clear: both;
+}
+
+/* Units Page */
+.unit_link {
+	float: left;
+	text-align: center;
+}
+
+#human_links {
+	margin-top: 20px;
+	float: left;
+	margin-bottom: 40px;
+	width: 384px;
+}
+
+#piscivian_links {
+	margin-top: 20px;
+	float: right;
+	margin-bottom: 40px;
+	width: 384px;
+}
+
+#global_mainarea h2 {
+	text-align: center;
+}
+
+/* Individual Unit Page */
+#unit {
+	/* margin: 30px; */
+	width: 740px;
+	margin: 0 auto;
+}
+
+#unit_top {
+	width: 100%;
+	height: 450px;
+}
+
+#unit_left {
+	float: left;
+	height: 411px;
+	width: 150px;
+	text-align: center;
+}
+
+.unit_name_humans {
+	font-family: Times New Roman, serif;
+	font-size: 1.5em;
+	color: red;
+}
+
+.unit_name_piscivians {
+	font-family: Times New Roman, serif;
+	font-size: 1.5em;
+	color: blue;
+}
+
+#unit_left img {
+	width: 100%;
+	height: 380px;
+}
+
+#unit_right {
+	height: 411px;
+}
+
+#unit_stats_humans {
+	float: left;
+	margin-left: 40px;
+}
+
+#unit_stats_piscivians {
+	float: left;
+	margin-left: 40px;
+}
+
+#unit_stats_humans .stats_title {
+	font-family: Times New Roman, serif;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-decoration: underline;
+	color: red;
+}
+
+#unit_stats_piscivians .stats_title {
+	font-family: Times New Roman, serif;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-decoration: underline;
+	color: blue;
+}
+
+.left {
+	float: left;
+	text-align: left;
+	margin-right: 20px;
+}
+
+.right {
+	float: left;
+	text-align: right;
+	margin-right: 20px;
+}
+
+#unit_video {
+	float: left;
+	margin-top: 20px;
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+
+#unit_buttons {
+	float: left;
+	margin-left: 5px;
+	margin-top: 54.5px;
+}
+
+#unit_buttons img {
+	margin-bottom: 5px;
+	width: 64px;
+	border-width: 3px;
+	border-color: black;
+}
+
+#unit_abilities {
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+#unit_abilities #title_humans {
+	font-family: Times New Roman, serif;
+	font-size: 1.5em;
+	color: red;
+}
+
+#unit_abilities #title_piscivians {
+	font-family: Times New Roman, serif;
+	font-size: 1.5em;
+	color: blue;
+}
+
+.ability {
+	margin-bottom: 30px;
+}
+
+.ability img {
+	float: left;
+}
+
+.ability_desc {
+	margin-left: 80px;
+}
+
+.ability_desc .name_humans {
+	font-family: Times New Roman, serif;
+	font-size: 1.2em;
+	color: red;
+}
+
+.ability_desc .name_piscivians {
+	font-family: Times New Roman, serif;
+	font-size: 1.2em;
+	color: blue;
+}
+
+</style>
+
+<!-- Unit -->
+
+<div id="unit">
+
+	<!-- Unit Top -->
+	
+ <div id="unit_top">
+
+	<!-- Unit Left -->
+	
+	<div id="unit_left">
+	<span class="unit_name{{ include.unit.class }}">{{ include.unit.stats.name }}</span><br><br>
+	<img src="{{ include.unit.stats.icon }}" />
+	</div>
+	
+	<!-- Unit Right -->
+	
+	<div id="unit_right">
+		
+		<!-- Commander Stats -->
+		
+	<div id="unit_stats{{ include.unit.class }}">
+		
+		<span class="stats_title">Commander Stats</span><br>
+		
+		<div class="left">
+		Health:<br>
+		Strength:<br>
+		Armor:<br>
+		Move Speed:<br>
+		Faction:<br>
+		</div>
+		
+		<div class="right">
+		{{ include.unit.stats.hp }}<br>
+		{{ include.unit.stats.str }}<br>
+		{{ include.unit.stats.arm }}<br>
+		{{ include.unit.stats.move }}<br>
+		{{ include.unit.stats.fac }}<br>
+		</div>
+		
+	</div>
+		
+		<!-- Unit Stats -->
+		
+	<div id="unit_stats{{ include.unit.class }}">
+		
+		<span class="stats_title">Unit Stats</span><br>
+		
+		<div class="left">
+		Health:<br>
+		Strength:<br>
+		Armor:<br>
+		Move Speed:<br>
+		Attack Range:<br>
+		</div>
+		
+		 <div class="right">
+		{{ include.unit.unitstats.hp }}<br>
+		{{ include.unit.unitstats.str }}<br>
+		{{ include.unit.unitstats.arm }}<br>
+		{{ include.unit.unitstats.move }}<br>
+		{{ include.unit.unitstats.rng }}<br>
+		</div>
+		
+	</div><br>
+	
+		<!-- Commander Ability Videos -->
+		
+	<div id="unit_video">
+		
+		<div id='jwplayer'></div>
+		
+		{% for ability in include.unit.abilities %}
+		
+			<script type='text/javascript'>
+				jwplayer('jwplayer').setup({
+				'flashplayer': 'http://www.chrisw.org/web/shared/jwplayer/player.swf',
+				'file': '{{ ability.url }}',
+				'image': '{{ ability.img }}',
+				'controlbar': 'none',
+				'dock': 'false',
+				'width': '480',
+				'height': '270'
+				}); 
+				</script> 
+		
+		{% break %}
+		{% endfor %}
+		
+	</div>	 
+		
+	<div id="unit_buttons">
+
+		{% for ability in include.unit.abilities %}
+		
+			<img id="ability_{{ ability.name }}" src="{{ ability.icon }}"
+				onclick="changevideo('#ability_{{ ability.name }}', '{{ ability.url }}', '{{ ability.img }}')"/>
+			<br>
+			
+		 <script type='text/javascript'>
+				updateicon('#ability_{{ ability.name }}', '{{ ability.url }}', '{{ ability.img }}');
+				</script>
+				
+		{% endfor %}
+
+	</div>
+		
+	<!-- /Unit Right -->
+		
+	</div>
+	
+	<!-- Unit Top -->
+	
+</div>
+	
+	<!-- Unit Abilities -->
+	
+<div id="unit_abilities">
+	
+<span id="title{{ include.unit.class }}">Abilities</span><br><hr>
+
+	
+	{% for ability in include.unit.abilities %}
+		
+		<div class="ability">
+		<img src="{{ ability.icon }}"/>
+		<div class="ability_desc">
+		<span class="name{{ include.unit.class }}">{{ ability.name }}</span> - {{ ability.desc }}<br><br>
+		<div class="left">cooldown:<br>range:</div>
+		<div class="left">{{ ability.cool }}<br>{{ ability.rng }}</div>
+		<div class="break"></div>
+		</div>
+		</div>
+
+	{% endfor %}
+	
+</div>
+
+<!-- /Unit -->
+
+</div><br>
