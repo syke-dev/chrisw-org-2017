@@ -1,5 +1,6 @@
 {
 	"class": "_humans",
+	"id": "bombship",
 	"stats": {
 		"name": "Bombship",
 		"icon": "http://bloodtide.chrisw.org/units/bombship/Bombship.png",

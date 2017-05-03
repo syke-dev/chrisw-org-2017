@@ -1,5 +1,6 @@
 {
 	"class": "_humans",
+	"id": "submarine",
 	"stats": {
 		"name": "Submarine",
 		"icon": "http://bloodtide.chrisw.org/units/submarine/Submarine.png",

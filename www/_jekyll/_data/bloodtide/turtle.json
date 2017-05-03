@@ -1,5 +1,6 @@
 {
 	"class": "_piscivians",
+	"id": "turtle",
 	"stats": {
 		"name": "Turtle",
 		"icon": "http://bloodtide.chrisw.org/units/turtle/Turtle.png",
