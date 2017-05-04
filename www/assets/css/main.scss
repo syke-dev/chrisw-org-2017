@@ -98,12 +98,28 @@ section.gray {
 
 // red theme
 
-
 section.red {
-
 	background-color: rgb(247, 87, 91);
 	color: white;
 }
 
-
 // white theme
+
+section.white {
+	background-color: white;
+	color: black;
+}
+
+// off-white theme
+
+section.off-white {
+	background-color: #fafafa;
+	color: black;
+}
+
+// dark grey theme
+
+section.dark-grey {
+	background-color: #1D1D1D;
+	color: white;
+}
