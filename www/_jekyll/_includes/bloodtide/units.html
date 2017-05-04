@@ -1,58 +1,80 @@
-<style>
 
-	.bloodtide-units {
-		/* height: 700px; */
+<script type='text/javascript' src='http://www.chrisw.org/web/shared/jwplayer/jwplayer.js'></script>
+<script type='text/javascript' src='http://www.chrisw.org/web/bloodtide/units/units.js'></script>
+<script type='text/javascript' src='http://www.chrisw.org/web/shared/jquery.js'></script>
+
+<link rel="stylesheet" type="text/css" href="assets/css/bloodtide/unitdisplay.css" />
+
+<script>
+
+	function displayUnit(id) {
+		$('.unit').css('display', 'none');
+		$('#' + id).css('display', 'block');
 	}
 
-</style>
+	$(function() {
+		displayUnit('bombship');
+	});
 
-<section class="red bloodtide-units">
+</script>
+
+<section class="white bloodtide-units">
 	<div class="container">
 
+		<div class="unit-links">
+
+			<div id="human_links">
+			
+				<center><span class="unit_name_humans">Humans</span></center><br>
+
+				<div class="unit_link" onclick="displayUnit('bombship')">
+					<img src="assets/images/bloodtide/units/bombship/BombshipIcon.png" /><br>
+					<a href="bombship">Bombship</a>
+				</div>
+				
+				<div class="unit_link" onclick="displayUnit('scubatroop')">
+					<img src="assets/images/bloodtide/units/scubatroop/ScubaTroopIcon.png" /><br>
+					<a href="scubatroop">Scuba Troop</a>
+				</div>
+				
+				<div class="unit_link" onclick="displayUnit('submarine')">
+					<img src="assets/images/bloodtide/units/submarine/SubmarineIcon.jpeg" /><br>
+					<a href="submarine">Submarine</a>
+				</div>
+			
+			</div>
+		
+			<div id="piscivian_links">
+			
+				<center><span class="unit_name_piscivians">Piscivians</span></center><br>
+				
+				<div class="unit_link" onclick="displayUnit('mantaray')">
+					<img src="assets/images/bloodtide/units/mantaray/MantaRayIcon.png" /><br>
+					<a href="mantaray">Manta Ray</a>
+				</div>
+				
+				<div class="unit_link" onclick="displayUnit('merman')">
+					<img src="assets/images/bloodtide/units/merman/MermanIcon.jpeg" /><br>
+					<a href="merman">Merman</a>
+				</div>
+				
+				<div class="unit_link" onclick="displayUnit('turtle')">
+					<img src="assets/images/bloodtide/units/turtle/TurtleIcon.jpeg" /><br>
+					<a href="turtle">Turtle</a>
+				</div>
+			
+			</div>
+
+		</div>
+
+		<div class="break"></div>
+
 		{% include bloodtide/unitdisplay.html unit=site.data.bloodtide.bombship %}
-
-
-		<div id="human_links">
-		
-		<center><span class="unit_name_humans">Humans</span></center><br>
-
-		<div class="unit_link">
-			<img src="assets/images/bloodtide/units/bombship/BombshipIcon.png" /><br>
-			<a href="bombship">Bombship</a>
-		</div>
-		
-		<div class="unit_link">
-			<img src="assets/images/bloodtide/units/scubatroop/ScubaTroopIcon.png" /><br>
-			<a href="scubatroop">Scuba Troop</a>
-		</div>
-		
-		<div class="unit_link">
-			<img src="assets/images/bloodtide/units/submarine/SubmarineIcon.jpeg" /><br>
-			<a href="submarine">Submarine</a>
-		</div>
-		
-		</div>
-		
-		<div id="piscivian_links">
-		
-		<center><span class="unit_name_piscivians">Piscivians</span></center><br>
-		
-		<div class="unit_link">
-			<img src="assets/images/bloodtide/units/mantaray/MantaRayIcon.png" /><br>
-			<a href="mantaray">Manta Ray</a>
-		</div>
-		
-		<div class="unit_link">
-			<img src="assets/images/bloodtide/units/merman/MermanIcon.jpeg" /><br>
-			<a href="merman">Merman</a>
-		</div>
-		
-		<div class="unit_link">
-			<img src="assets/images/bloodtide/units/turtle/TurtleIcon.jpeg" /><br>
-			<a href="turtle">Turtle</a>
-		</div>
-		
-		</div>
+		{% include bloodtide/unitdisplay.html unit=site.data.bloodtide.mantaray %}
+		{% include bloodtide/unitdisplay.html unit=site.data.bloodtide.merman %}
+		{% include bloodtide/unitdisplay.html unit=site.data.bloodtide.scuba %}
+		{% include bloodtide/unitdisplay.html unit=site.data.bloodtide.submarine %}
+		{% include bloodtide/unitdisplay.html unit=site.data.bloodtide.turtle %}
 
 	</div>
 </section>
