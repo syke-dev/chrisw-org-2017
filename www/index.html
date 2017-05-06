@@ -10,13 +10,17 @@
 
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 		<link rel="stylesheet" type="text/css" href="assets/css/landing.css" />
-	
+		<link rel="stylesheet" type="text/css" href="assets/css/buttons.css" />
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+		<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 	</head>
   
 	<body>
 	
 		{% include navbar.html %}
 		
+		<!-- 
 		<section class="white project intro">
 			<div class="container">
 				<img id="me" src="http://blindman.chrisw.org/media/ChrisPlaying.jpg">
@@ -29,28 +33,47 @@
 				<span id = "contact">{{site.email}}<br></span>
 			</div>
 		</section>
+		-->
 
+		<!-- 
 		<section class="dark-grey separator">
 			<div class="container">
 				Professional Projects
 			</div>
 		</section>
+		-->
 		
+		<div class="begin"></div>
+
 		{% include megafamecasino/intro.html %}
 
-		{% include megafamecasino/images-2-by-2-medium.html %}
+		<div class="sep"></div>
+
+		<!-- { include megafamecasino/images-2-by-2-medium.html %} -->
 		
+		<!-- 
 		<section class="dark-grey separator">
 			<div class="container">
 				Student Projects
 			</div>
 		</section>
-		
-		{% include bloodtide/intro.html %}
-		
-		{% include bloodtide/units.html %}
+		-->
 
-		{% include megafamecasino/intro.html %}
+		{% include bloodtide/intro.html %}
+
+		<div class="sep"></div>
+
+		<!-- { include bloodtide/units.html %} -->
+
+		{% include willow/intro.html %}
+
+		<div class="sep"></div>
+
+		{% include wattbodies/intro.html %}
+
+		<div class="sep"></div>
+
+		{% include blindman/intro.html %}
 		
 	</body>
 
