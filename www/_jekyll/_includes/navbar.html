@@ -5,24 +5,24 @@
 		height: 60px;
 		background-color: #1D1D1D;
 		color: white;
-		position: fixed;
+		position: relative;
 		z-index: 1000;
 	}
 	
 	#navbar.fixed {
 		position: fixed;
 		z-index: 1000;
+		top: 0px;
 	}
 	
 	#navbar-spacer {
-		width 100%;
-		height: 60px;
-		/* display: none; */
+		width: 100%;
+		height: 0px;
 	}
 
 	#navbar-spacer.visible {
-		display: initial;
-	}	
+		height: 60px;
+	}
 
 	#navbar ul {
 		margin: 0px;
@@ -60,18 +60,24 @@ a.five:hover {text-decoration:underline;}
 
 <script>
 
-	window.onscroll = function() {
-		var navbar = document.getElementById("navbar");
-		var spacer = document.getElementById("navbar-spacer");
-		
-		if (document.body.scrollTop > 100) {
-			navbar.className = "fixed";
-			spacer.className = "visible";
+	var navbarTop = 0;
+
+	var updateNavbar = function() {
+		if (document.body.scrollTop > navbarTop) {
+			$('#navbar').addClass('fixed');
+			$('#navbar-spacer').addClass('visible');
 		} else {
-			navbar.className = "";
-			spacer.className = "";		
+			$('#navbar').removeClass('fixed');
+			$('#navbar-spacer').removeClass('visible');
 		}
 	};
+
+	$(function() {
+		navbarTop = $('#navbar').offset().top;
+		window.onscroll = updateNavbar;
+
+		updateNavbar();
+	});
 
 </script>
 
