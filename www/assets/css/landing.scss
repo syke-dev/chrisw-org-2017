@@ -26,19 +26,6 @@ section.separator {
 	}
 }
 
-body {
-	// background-color: rgb(251, 247, 239);
-	// background-color: rgb(40,56,66) !important;
-	// background-color: #1c282f !important;
-}
-
-section {
-	// background-color: rgb(251, 247, 239) !important;
-	// background-color: rgb(40,56,66) !important;
-	// background-color: #1c282f !important;
-	background-color: white !important;
-}
-
 .begin {
 	height: 50px;
 }
@@ -46,37 +33,16 @@ section {
 .sep {
 	max-width: 1240px;
 	height: 2px;
-	// background-color: black;
-	// background-color: #b99cda;
 	background-color: lightblue !important;
 	margin: 50px auto 50px auto;
-
-	//background: -webkit-linear-gradient(left, rgb(255,255,255) 0%, lightblue 50%,rgb(255,255,255) 100%) !important; /* Chrome10-25,Safari5.1-6 */
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,29b8e5+50,ffffff+100 */
-//background: rgb(255,255,255); /* Old browsers */
-//background: -moz-linear-gradient(left, rgb(255,255,255) 0%, rgb(41,184,229) 50%, rgb(255,255,255) 100%); /* FF3.6-15 */
-//background: -webkit-linear-gradient(left, rgb(255,255,255) 0%,rgb(41,184,229) 50%,rgb(255,255,255) 100%); /* Chrome10-25,Safari5.1-6 */
-//background: linear-gradient(to right, rgb(255,255,255) 0%,rgb(41,184,229) 50%,rgb(255,255,255) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
-}
-
-* {
-	// color: rgb(135, 147, 154);
-	// color: rgb(151, 164, 171);
-	// color: #4a4a4a;
-	// color: #3a3a3a;
 }
 
 h1 {
-	// color: #666;
 	color: #2a2a2a;
-	// color: white;
-
 	font-size: 38px;
     line-height: 1.4;
     margin: 0 auto 10px;
     font-weight: bold;
-    // font-family: AvenirLTStd-Heavy;
 	font-family: monospace;
 }
 
@@ -84,25 +50,7 @@ h2 {
 	font-size: 24px;
 	font-style: normal;
 	color: #2a2a2a;
-	// color: #b1bdc5;
-	// color: #3a3a3a;
 	font-family: cursive;
     margin: 5px 0px 0px 140px;
 }
 
-.wattbo {
-	position: absolute;
-	// z-index: -1;
-	opacity: .2;
-	width: 300px;
-	left: 250px;
-	top: 20px;
-}
-
-/*
-#263238 - dark gray from polymer
-#fafafa - macbook gray
-#1D1D1D - rogue dark gray
-#eceff1 - light gray polymer
-rgb(40,56,66) -- cool color from 
-*/
