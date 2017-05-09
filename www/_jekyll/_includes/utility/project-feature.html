@@ -1,0 +1,43 @@
+<section class="white project-feature-two-column">
+	<div class="container">
+	
+		<div class="left column">
+		
+			<div class="title">
+				<h1>{{ include.data.title }}</h1>
+			</div>
+
+			<div class="content">
+				<h2>{{ include.data.what }}</h2>
+				<br>
+				<ul>
+			
+					{% for entry in include.data.desc %}
+					
+						<li>{{ entry }}</li>
+
+					{% endfor %}
+
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="right column">
+			
+			<div class="video">
+				<div class="carousel single-image">
+				
+					{% for image in include.data.images %}
+					
+						<div><div><img data-lazy="{{ image }}"></div></div>
+					
+					{% endfor %}
+				
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</section>

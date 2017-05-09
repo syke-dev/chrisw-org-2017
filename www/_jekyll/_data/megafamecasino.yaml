@@ -1,0 +1,72 @@
+features:
+
+  challenges:
+    title: "Challenge System"
+    what: "Worked on and designed a challenge system that allows players to do daily and purchased challenges."
+    desc:
+      - "How it works:"
+      - "Built a simple local pubsub system and hooked into existing systems to publish the results of poker hands, slots spins, etc."
+      - "Built an xml-based `language` for designers to be able to construct custom challenges using any of the game events published by the system."
+      - "Examples of challenges:"
+      - "	 get 2nd place or higher in a slots tournament"
+      - "	 get a straight flush in poker"
+      - "	 change your avatar"
+    images:
+      - "/assets/images/megafamecasino/videopoker/quadcrush1.png"
+      - "/assets/images/megafamecasino/videopoker/quadcrush2.png"
+      - "/assets/images/megafamecasino/videopoker/quadcrush3.png"
+
+  friends:
+    title: "Friends System"
+    what: "Worked to intergrate an XMPP based system into our game."
+    desc:
+      - "Built an XMPP client in GWT using an external javascript library to parse the raw jabber protocol."
+      - "Used the jabber client to support joining your in-game friends at poker tables and slots rooms, by using a custom presence field to propagate user's current game room ids to their friends. ~~~~~ TODO"
+    images:
+      - "/assets/images/megafamecasino/videopoker/quadcrush1.png"
+      - "/assets/images/megafamecasino/videopoker/quadcrush2.png"
+      - "/assets/images/megafamecasino/videopoker/quadcrush3.png"
+
+  poker:
+    title: "Poker"
+    what: "Built a multiplayer poker game over http."
+    desc:
+      - "Supports classic free-play rooms and single table tournament style rooms."
+      - "Table configuration is entirely data-driven, which allowed us to build new game modes with minimal programming (such as heads-up)."
+      - "All poker actions including chat are REST requests to the server running the room."
+      - "The client gets game updates via polling. Ideally this would be changed to a push-based system, but don't have any issues with the current system to justify the work needed."
+    images:
+      - "/assets/images/megafamecasino/poker/holdem.png"
+      - "/assets/images/megafamecasino/poker/shootout.png"
+      - "/assets/images/megafamecasino/poker/headsup.png"
+
+  quadcrush:
+    title: "Quad Crush Video Poker"
+    what: "Built a variation of video poker."
+    desc:
+      - "Quad Crush is similar to normal video poker, except the user chooses the suits and ranks independently, then the result of both choices are combined to form the final hand."
+    images:
+      - "/assets/images/megafamecasino/videopoker/quadcrush1.png"
+      - "/assets/images/megafamecasino/videopoker/quadcrush2.png"
+      - "/assets/images/megafamecasino/videopoker/quadcrush3.png"
+
+  spectate:
+    title: "Poker Tournaments Spectator System"
+    what: "Built a system that allows players to spectate celebrity poker tournaments on a 10 minute delay."
+    desc:
+      - "The system works by having each poker table in the tournament store every action in Cassandra."
+      - "The client (once per minute) will request a one minute slice of the table history."
+      - "The server will then return one minute of actions for 10 minutes ago."
+      - "The client will then pump each action into the client simulation at the correct time."
+    images:
+      - "/assets/images/megafamecasino/spectate/spec5.png"
+      - "/assets/images/megafamecasino/spectate/spec6.png"
+      - "/assets/images/megafamecasino/spectate/spec9.png"
+
+  template:
+    title: ""
+    what: ""
+    desc:
+      - ""
+    images:
+      - ""

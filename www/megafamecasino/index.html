@@ -22,196 +22,23 @@
 				
 		<div class="begin"></div>
 
-		<section class="white project-feature">
-			<div class="container">
-			
-				<div class="title">
-					<h1>Poker</h1>
-				</div>
-				
-				<div class="content">
-
-					<div class="responsible-for">
-						<h2>Built a multiplayer poker game over http.</h2>
-						Supports classic free-play rooms and single table tournament style rooms.<br>
-						Table configuration is entirely data-driven, which allowed us to build new game modes with minimal programming (such as heads-up).<br>
-						All poker actions including chat are REST requests to the server running the room.<br>
-						The client gets game updates via polling. Ideally this would be changed to a push-based system, 
-						but don't have any issues with the current system to justify the work needed.<br>
-					</div>
-				
-					<div class="video">
-						<div class="carousel single-image">
-							<div><div><img data-lazy="/assets/images/megafamecasino/poker/holdem.png"></div></div>
-							<div><div><img data-lazy="/assets/images/megafamecasino/poker/shootout.png"></div></div>
-							<div><div><img data-lazy="/assets/images/megafamecasino/poker/headsup.png"></div></div>
-						</div>
-					</div>
-
-				</div>
-				
-				<div class="footer">
-									
-				</div>
-
-			</div>
-		</section>
+		{% include utility/project-feature.html data=site.data.megafamecasino.features.poker %}
 
 		<div class="sep"></div>
 
-		<section class="white project-feature">
-			<div class="container">
-			
-				<div class="title">
-					<h1>Poker Tournaments Spectator System</h1>
-				</div>
-				
-				<div class="content">
-
-					<div class="responsible-for">
-						<h2>Built a system that allows players to spectate celebrity poker tournaments on a 10 minute delay.</h2>
-						<br>
-						The system works by having each poker table in the tournament store every action in Cassandra.<br>
-						The client (once per minute) will request a one minute slice of the table history.<br>
-						The server will then return one minute of actions for 10 minutes ago.<br>
-						The client will then pump each action into the client simulation at the correct time.
-					</div>
-				
-					<div class="video">
-						<div class="carousel single-image">
-							<div><div><img data-lazy="/assets/images/megafamecasino/spectate/spec5.png"></div></div>
-							<div><div><img data-lazy="/assets/images/megafamecasino/spectate/spec6.png"></div></div>
-							<div><div><img data-lazy="/assets/images/megafamecasino/spectate/spec9.png"></div></div>
-						</div>
-					</div>
-
-				</div>
-				
-				<div class="footer">
-
-				</div>
-
-			</div>
-		</section>
+		{% include utility/project-feature.html data=site.data.megafamecasino.features.spectate %}
 
 		<div class="sep"></div>
 
-		<section class="white project-feature">
-			<div class="container">
-			
-				<div class="left column">
-				
-					<div class="title">
-						<h1>Quad Crush Video Poker</h1>
-					</div>
-					
-					<div class="content">
-
-						<div class="responsible-for">
-							<h2>Built a variation of video poker.</h2>
-							<br>
-							Quad Crush is similar to normal video poker, except the user chooses the suits and ranks independently,
-							then the result of both choices are combined to form the final hand.<br>
-						</div>
-
-					</div>
-
-				</div>
-
-				<div class="right column">
-					
-					<div class="video">
-						<div class="carousel single-image">
-							<div><div><img data-lazy="/assets/images/megafamecasino/videopoker/quadcrush1.png"></div></div>
-							<div><div><img data-lazy="/assets/images/megafamecasino/videopoker/quadcrush2.png"></div></div>
-							<div><div><img data-lazy="/assets/images/megafamecasino/videopoker/quadcrush3.png"></div></div>
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-		</section>
+		{% include utility/project-feature.html data=site.data.megafamecasino.features.quadcrush %}
 
 		<div class="sep"></div>
 
-		<section class="white project-feature-two-column">
-			<div class="container">
-			
-				<div class="left column">
-				
-					<div class="title">
-						<h1>Friends System</h1>
-					</div>
-					
-					<div class="content">
-						<h2>Worked to intergrate an XMPP based system into our game.</h2>
-						<br>
-						<ul>
-							<li>Built an XMPP client in GWT using an external javascript library to parse the raw jabber protocol.</li>
-							<li>Used the jabber client to support joining your in-game friends at poker tables and slots rooms,
-								by using a custom presence field to propagate user's current game room ids to their friends. ~~~~~ TODO</li>
-						</ul>
-					</div>
-
-				</div>
-
-				<div class="right column">
-					
-					<div class="video">
-						<div class="carousel single-image">
-							<div><div><img data-lazy="/assets/images/megafamecasino/videopoker/quadcrush1.png"></div></div>
-							<div><div><img data-lazy="/assets/images/megafamecasino/videopoker/quadcrush2.png"></div></div>
-							<div><div><img data-lazy="/assets/images/megafamecasino/videopoker/quadcrush3.png"></div></div>
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-		</section>
+		{% include utility/project-feature.html data=site.data.megafamecasino.features.friends %}
 
 		<div class="sep"></div>
 
-		<section class="white project-feature">
-			<div class="container">
-			
-				<div class="title">
-					<h1>Challenge System</h1>
-				</div>
-				
-				<div class="content">
-
-					<div class="responsible-for">
-						<h2>Worked on and designed a challenge system that allows players to do daily and purchased challenges.</h2>
-						<br>
-						How it works:
-						Built a simple local pubsub system and hooked into existing systems to publish the results of poker hands, slots spins, etc.<br>
-						Built an xml-based `language` for designers to be able to construct custom challenges using any of the game events published by the system.<br>
-						Examples of challenges:<br>
-						<ul>
-							<li>get 2nd place or higher in a slots tournament</li>
-							<li>get a straight flush in poker</li>
-							<li>change your avatar</li>
-						</ul>
-					</div>
-				
-					<div class="video">
-						<div class="carousel single-image">
-							<div><div><img data-lazy="/assets/images/megafamecasino/spectate/spec5.png"></div></div>
-							<div><div><img data-lazy="/assets/images/megafamecasino/spectate/spec6.png"></div></div>
-							<div><div><img data-lazy="/assets/images/megafamecasino/spectate/spec9.png"></div></div>
-						</div>
-					</div>
-
-				</div>
-				
-				<div class="footer">
-
-				</div>
-
-			</div>
-		</section>
+		{% include utility/project-feature.html data=site.data.megafamecasino.features.challenges %}
 
 	</body>
 
