@@ -94,3 +94,64 @@ section.project-feature {
 	}
 	
 }
+
+section.project-feature-two-column {
+	position: relative;
+
+	.container {
+		max-width: 1240px;
+		margin: 0px auto;
+	}
+
+	.column {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 15px;
+
+		&.left {
+			padding-bottom: 70px;
+			margin-left: 50px;
+			max-width: 450px;
+		}
+
+		&.right {
+			margin-left: 75px;
+		}
+	}
+	
+	.title {
+		max-width: 400px;
+		border-bottom: 2px solid black;
+		margin-bottom: 20px;
+	}
+	
+	.content {
+		ul {
+			list-style: none;
+			padding: 0px;
+			li {
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+	.carousel.single-image {
+		$width: 625px;
+		$height: 400px;
+
+		width: $width;
+		height: $height;
+
+		div div {
+			width: $width;
+			height: $height;
+			overflow: hidden;
+
+			img {
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+	}
+	
+}
