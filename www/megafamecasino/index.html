@@ -1,0 +1,101 @@
+---
+---
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		
+		<title>chrisw</title>
+
+		<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/project-feature.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/buttons.css" />
+
+		{% include utility/carousel.html %}
+
+	</head>
+
+	<body>
+	
+		{% include navbar.html %}
+				
+		<div class="begin"></div>
+
+		<section class="white project-feature">
+			<div class="container">
+			
+				<div class="title">
+					<h1>Poker</h1>
+				</div>
+				
+				<div class="content">
+
+					<div class="responsible-for">
+						<h2>Built a multiplayer poker game over http.</h2>
+						Supports classic free-play rooms and single table tournament style rooms.<br>
+						Table configuration is entirely data-driven, which allowed us to build new game modes with minimal programming (such as heads-up).<br>
+						All poker actions including chat are REST requests to the server running the room.<br>
+						The client gets game updates via polling. Ideally this would be changed to a push-based system, 
+						but don't have any issues with the current system to justify the work needed.<br>
+					</div>
+				
+					<div class="video">
+						<div class="carousel single-image">
+							<div><div><img data-lazy="/assets/images/megafamecasino/poker/holdem.png"></div></div>
+							<div><div><img data-lazy="/assets/images/megafamecasino/poker/shootout.png"></div></div>
+							<div><div><img data-lazy="/assets/images/megafamecasino/poker/headsup.png"></div></div>
+						</div>
+					</div>
+
+				</div>
+				
+				<div class="footer">
+									
+				</div>
+
+			</div>
+		</section>
+
+		<div class="sep"></div>
+
+		<section class="white project-feature">
+			<div class="container">
+			
+				<div class="title">
+					<h1>Poker Tournaments Spectator System</h1>
+				</div>
+				
+				<div class="content">
+
+					<div class="responsible-for">
+						<h2>Built a system that allows players to spectate celebrity poker tournaments on a 10 minute delay.</h2>
+						<br>
+						The system works by having each poker table in the tournament store every action in Cassandra.<br>
+						The client (once per minute) will request a one minute slice of the table history.<br>
+						The server will then return one minute of actions for 10 minutes ago.<br>
+						The client will then pump each action into the client simulation at the correct time.
+					</div>
+				
+					<div class="video">
+						<div class="carousel single-image">
+							<div><div><img data-lazy="/assets/images/megafamecasino/spectate/spec5.png"></div></div>
+							<div><div><img data-lazy="/assets/images/megafamecasino/spectate/spec6.png"></div></div>
+							<div><div><img data-lazy="/assets/images/megafamecasino/spectate/spec9.png"></div></div>
+						</div>
+					</div>
+
+				</div>
+				
+				<div class="footer">
+
+				</div>
+
+			</div>
+		</section>
+
+		<div class="sep"></div>
+
+	</body>
+
+</html>
