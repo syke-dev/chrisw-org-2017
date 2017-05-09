@@ -13,6 +13,21 @@ section.project-feature {
 		max-width: 1240px;
 		margin: 0px auto;
 	}
+
+	.column {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 15px;
+
+		&.left {
+			padding-bottom: 70px;
+			margin-left: 50px;
+		}
+
+		&.right {
+			margin-left: 75px;
+		}
+	}
 	
 	.title {
 		max-width: 400px;
@@ -60,7 +75,7 @@ section.project-feature {
 	}
 
 	.carousel.single-image {
-		$width: 700px;
+		$width: 625px;
 		$height: 400px;
 
 		width: $width;
