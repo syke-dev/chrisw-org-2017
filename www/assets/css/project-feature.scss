@@ -1,0 +1,81 @@
+---
+---
+
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+section.project-feature {
+	position: relative;
+
+	.container {
+		max-width: 1240px;
+		margin: 0px auto;
+	}
+	
+	.title {
+		max-width: 400px;
+		border-bottom: 2px solid black;
+		margin-bottom: 20px;
+	}
+	
+	.content {
+
+		position: relative;
+	
+		.responsible-for {
+
+			float: left;
+			font-size: 20px;
+			max-width: 450px;
+
+			ul {
+				li {
+					margin-bottom: 15px;
+				}
+			}
+		}
+		
+		.video {
+			float: right;
+		}
+		
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		.read-more {
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+		}
+	}
+
+	.footer {
+		height: 50px;
+		margin-top: 25px;
+	}
+
+	.carousel.single-image {
+		$width: 700px;
+		$height: 400px;
+
+		width: $width;
+		height: $height;
+
+		div div {
+			width: $width;
+			height: $height;
+			overflow: hidden;
+
+			img {
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+	}
+	
+}
