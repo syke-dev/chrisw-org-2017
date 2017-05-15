@@ -23,10 +23,16 @@
 
 		</div>
 
+		{% comment %}
+			TODO: Figure out a better way to generate ids.
+		{% endcomment %}
+
+		{% assign fullscreenWindowId = include.data.title %}
+
 		<div class="right column">
 			
 			<div class="video">
-				<div class="carousel single-image">
+				<div class="carousel single-image" data-fullscreenWindowId="{{ fullscreenWindowId }}">
 				
 					{% for image in include.data.images %}
 					
@@ -37,6 +43,20 @@
 				</div>
 			</div>
 
+			<div id="{{ fullscreenWindowId }}" class="fullscreenWindow">
+
+				<div class="carousel single-image fullscreen">
+				
+					{% for image in include.data.images %}
+					
+						<div><div><img data-lazy="{{ image }}"></div></div>
+					
+					{% endfor %}
+				
+				</div>
+
+			</div>
+			
 		</div>
 
 	</div>

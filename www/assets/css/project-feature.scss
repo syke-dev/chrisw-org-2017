@@ -104,18 +104,39 @@ section.project-feature-two-column {
 	}
 
 	.column {
+
+		$left-col-width: 450px;
+		$left-col-margin: 50px;
+
+		$right-col-width: 533px;
+		$right-col-margin: 75px;
+
+		$breakpoint-min-width: $left-col-width + $left-col-margin + $right-col-width + $right-col-margin;
+
 		display: inline-block;
 		vertical-align: middle;
-		margin: 15px;
 
 		&.left {
+			width: $left-col-width;
+			margin-left: $left-col-margin;
 			padding-bottom: 70px;
-			margin-left: 50px;
-			max-width: 450px;
 		}
 
 		&.right {
-			margin-left: 75px;
+			width: $right-col-width;
+			margin-left: $right-col-margin;
+		}
+
+		@media screen and (max-width: 320px) {
+			.profile-pic {
+				width: 100px;
+				float: none;
+			}
+		}
+		@media screen and (min-width: 1200px) {
+			.profile-pic {
+			float: right;
+			}
 		}
 	}
 	
@@ -136,29 +157,15 @@ section.project-feature-two-column {
 	}
 
 	.video {
-
-		$width: 533px; // 625px;
-		$height: 400px; // 400px;
-
-		width: $width;
-		height: $height;
-
-
+		
 		.carousel.single-image {
 
 			div div {
-				width: $width;
-				height: $height;
-				overflow: hidden;
 
 				img {
 					max-width: 100%;
 					max-height: 100%;
 				}
-			}
-
-			.slick-prev:before, .slick-next:before { 
-				color:red !important;
 			}
 
 			.slick-list {
@@ -171,72 +178,48 @@ section.project-feature-two-column {
 			}
 		}
 
-		// box-shadow: rgba(blue, 0.4) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset;
-		// box-shadow: 2px 2px 27px 3px rgba(0,0,0,0.75);
-		// box-shadow: 0px 0px 38px 5px rgba(0,0,0,0.75);
-		// box-shadow: rgba(blue, 0.4) 0 0 25px;
+		// outline and hover highlight
 		.slick-list {
-			
-			// -webkit-transition: box-shadow 2s;
-
 			box-shadow: 0px 0px 0px 3px rgba(white, 0.75), rgba(blue, 0.4) 0 0 25px;
-			// box-shadow: rgba(blue, 0.4) 0 0 25px, inset 0px 0px 0px 3px rgba(0,0,0,0.75);
 
 			&:hover {
 				box-shadow: 0px 0px 0px 3px rgba(black, 0.75), rgba(blue, 0.4) 0 0 25px;
-				// box-shadow: 0px 0px 0px 3px rgba(0,0,0,0.75);
 			}
-		}
 
-		.carousel.single-image {
-		//	z-index: -1;
 		}
 	}
 
-
-	.video2 {
-
-		// 667 by 500 = 4:3
-		// 533 by 400 = 4:3
+	.fullscreenWindow {
 		
-		$width: 533px; // 625px;
-		$height: 400px; // 400px;
-		$border-width: 4px;
-		
-		width: $width;
-		height: $height;
-		border: $border-width solid rgba(red, 0.0);
-		box-shadow: rgba(blue, 0.4) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset;
+		width: 100%;
+		height: 100%;
 
-		&:hover {
-			border-color: rgba(red, 1.0);
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		z-index: 100;
+		
+		background-color: rgba(black, 0.75);
+		display: none;
+		opacity: 0;
+
+		transition: opacity 1s;
+
+		&.visible {
+			display: initial;
+			opacity: 1;
 		}
 
-		.carousel.single-image {
-
-			width: $width;
-			height: $height;
-
-			div div {
-				width: $width;
-				height: $height;
-				overflow: hidden;
-
-				img {
-					max-width: 100%;
-					max-height: 100%;
-				}
-			}
-
-			.slick-prev:before, .slick-next:before { 
-				color:red !important;
-			}
-
-			.slick-list {
-				cursor: zoom-in;
-				-webkit-cursor: zoom-in;
-			}
+		.carousel.fullscreen {
+			max-width: 1024px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 		}
 	}
 	
+	// color the next and previous buttons (defaults to white)
+	.slick-prev:before, .slick-next:before { 
+		color:red !important;
+	}
 }
