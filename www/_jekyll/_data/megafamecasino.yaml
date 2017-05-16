@@ -12,8 +12,14 @@ features:
       - "	 get a straight flush in poker"
       - "	 change your avatar"
     images:
-      - "/assets/images/megafamecasino/challenges/challenge-menu.jpg"
-      - "/assets/images/megafamecasino/challenges/challenge-completed.jpg"
+
+      - title: ""
+        src: "/assets/images/megafamecasino/challenges/challenge-menu.jpg"
+        caption: ""
+
+      - title: ""
+        src: "/assets/images/megafamecasino/challenges/challenge-completed.jpg"
+        caption: ""
 
   friends:
     title: "Friends System"
@@ -22,9 +28,10 @@ features:
       - "Built an XMPP client in GWT using an external javascript library to parse the raw jabber protocol."
       - "Used the jabber client to support joining your in-game friends at poker tables and slots rooms, by using a custom presence field to propagate user's current game room ids to their friends. ~~~~~ TODO"
     images:
-      - "/assets/images/megafamecasino/videopoker/quadcrush1.png"
-      - "/assets/images/megafamecasino/videopoker/quadcrush2.png"
-      - "/assets/images/megafamecasino/videopoker/quadcrush3.png"
+
+      - title: ""
+        src: "/assets/images/megafamecasino/videopoker/quadcrush1.png"
+        caption: ""
 
   poker:
     title: "Poker"
@@ -35,12 +42,30 @@ features:
       - "All poker actions including chat are REST requests to the server running the room."
       - "The client gets game updates via polling. Ideally this would be changed to a push-based system, but don't have any issues with the current system to justify the work needed."
     images:
-      - "/assets/images/megafamecasino/poker/poker-preflop.jpg"
-      - "/assets/images/megafamecasino/poker/poker-river.jpg"
-      - "/assets/images/megafamecasino/poker/poker-levelup.jpg"
-      - "/assets/images/megafamecasino/poker/shootout-blinds.jpg"
-      - "/assets/images/megafamecasino/poker/shootout-finalhand.jpg"
-      - "/assets/images/megafamecasino/poker/shootout-win.jpg"
+
+      - title: ""
+        src: "/assets/images/megafamecasino/poker/poker-preflop.jpg"
+        caption: ""
+
+      - title: ""
+        src: "/assets/images/megafamecasino/poker/poker-river.jpg"
+        caption: ""
+
+      - title: ""
+        src: "/assets/images/megafamecasino/poker/poker-levelup.jpg"
+        caption: ""
+
+      - title: ""
+        src: "/assets/images/megafamecasino/poker/shootout-blinds.jpg"
+        caption: ""
+
+      - title: ""
+        src: "/assets/images/megafamecasino/poker/shootout-finalhand.jpg"
+        caption: ""
+
+      - title: ""
+        src: "/assets/images/megafamecasino/poker/shootout-win.jpg"
+        caption: ""
 
   quadcrush:
     title: "Quad Crush Video Poker"
@@ -48,9 +73,18 @@ features:
     desc:
       - "Quad Crush is similar to normal video poker, except the user chooses the suits and ranks independently, then the result of both choices are combined to form the final hand."
     images:
-      - "/assets/images/megafamecasino/videopoker/quadcrush-suits.jpg"
-      - "/assets/images/megafamecasino/videopoker/quadcrush-ranks.jpg"
-      - "/assets/images/megafamecasino/videopoker/quadcrush-win.jpg"
+
+      - title: ""
+        src: "/assets/images/megafamecasino/videopoker/quadcrush-suits.jpg"
+        caption: ""
+
+      - title: ""
+        src: "/assets/images/megafamecasino/videopoker/quadcrush-ranks.jpg"
+        caption: ""
+
+      - title: ""
+        src: "/assets/images/megafamecasino/videopoker/quadcrush-win.jpg"
+        caption: ""
 
   slots:
     title: "Slot Machines"
@@ -60,10 +94,22 @@ features:
       - " - adding any new game features not present in our slots."
       - " - any changes to match our slots experience and feature set."
     images:
-      - "/assets/images/megafamecasino/slots/slots-tmac.jpg"
-      - "/assets/images/megafamecasino/slots/slots-rose.jpg"
-      - "/assets/images/megafamecasino/slots/slots-rose-builder.jpg"
-      - "/assets/images/megafamecasino/slots/slots-vikings.jpg"
+
+      - title: "Tmac Slots"
+        src: "/assets/images/megafamecasino/slots/slots-tmac.jpg"
+        caption: "foo"
+
+      - title: "Rose Slots"
+        src: "/assets/images/megafamecasino/slots/slots-rose.jpg"
+        caption: "foo"
+
+      - title: "Rose Slots Bonus Game"
+        src: "/assets/images/megafamecasino/slots/slots-rose-builder.jpg"
+        caption: "foo"
+
+      - title: "Slots Vikings"
+        src: "/assets/images/megafamecasino/slots/slots-vikings.jpg"
+        caption: "foo"
 
   spectate:
     title: "Poker Tournaments Spectator System"
@@ -74,9 +120,18 @@ features:
       - "The server will then return one minute of actions for 10 minutes ago."
       - "The client will then pump each action into the client simulation at the correct time."
     images:
-      - "/assets/images/megafamecasino/spectate/spectate1.jpg"
-      - "/assets/images/megafamecasino/spectate/spectate2.jpg"
-      - "/assets/images/megafamecasino/spectate/spectate3.jpg"
+
+      - title: ""
+        src: "/assets/images/megafamecasino/spectate/spectate1.jpg"
+        caption: ""
+
+      - title: ""
+        src: "/assets/images/megafamecasino/spectate/spectate2.jpg"
+        caption: ""
+
+      - title: ""
+        src: "/assets/images/megafamecasino/spectate/spectate3.jpg"
+        caption: ""
 
   template:
     title: ""
@@ -84,4 +139,8 @@ features:
     desc:
       - ""
     images:
-      - ""
+
+      - title: ""
+        src: ""
+        caption: ""
+
