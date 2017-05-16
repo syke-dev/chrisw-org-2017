@@ -36,7 +36,13 @@
 				
 					{% for image in include.data.images %}
 					
-						<div><div><img data-lazy="{{ image }}"></div></div>
+						<div>
+							<div>
+								<div class="image-title">{{ image.title }}</div>
+								<img data-lazy="{{ image.src }}">
+								<div class="image-caption">{{ image.caption }}</div>
+							</div>
+						</div>
 					
 					{% endfor %}
 				
@@ -49,7 +55,13 @@
 				
 					{% for image in include.data.images %}
 					
-						<div><div><img data-lazy="{{ image }}"></div></div>
+						<div>
+							<div>
+								<div class="image-title">{{ image.title }}</div>
+								<img data-lazy="{{ image.src }}">
+								<div class="image-caption">{{ image.caption }}</div>
+							</div>
+						</div>
 					
 					{% endfor %}
 				
