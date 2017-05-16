@@ -52,6 +52,19 @@ features:
       - "/assets/images/megafamecasino/videopoker/quadcrush-ranks.jpg"
       - "/assets/images/megafamecasino/videopoker/quadcrush-win.jpg"
 
+  slots:
+    title: "Slot Machines"
+    what: "Ported several 3rd party slot machines into our game."
+    desc:
+      - "Porting slot machines into our game consisted of:"
+      - " - adding any new game features not present in our slots."
+      - " - any changes to match our slots experience and feature set."
+    images:
+      - "/assets/images/megafamecasino/slots/slots-tmac.jpg"
+      - "/assets/images/megafamecasino/slots/slots-rose.jpg"
+      - "/assets/images/megafamecasino/slots/slots-rose-builder.jpg"
+      - "/assets/images/megafamecasino/slots/slots-vikings.jpg"
+
   spectate:
     title: "Poker Tournaments Spectator System"
     what: "Built a system that allows players to spectate celebrity poker tournaments on a 10 minute delay."
