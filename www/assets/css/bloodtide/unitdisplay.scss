@@ -1,173 +1,177 @@
 ---
 ---
 
-.break {
-	clear: both;
-}
+section.bloodtide-units {
 
-/* Units Page */
-.unit_link {
-	float: left;
-	text-align: center;
-}
+	.break {
+		clear: both;
+	}
 
-.unit-links {
-	width: 100%;
-	text-align: center;
-}
+	/* Units Page */
+	.unit_link {
+		float: left;
+		text-align: center;
+	}
 
-#human_links {
-	margin: 20px 10px 40px 10px;
-	display: inline-block;
-	width: 384px;
-}
+	.unit-links {
+		width: 100%;
+		text-align: center;
+	}
 
-#piscivian_links {
-	margin: 20px 10px 40px 10px;
-	display: inline-block;
-	width: 384px;
-}
+	#human_links {
+		margin: 20px 10px 40px 10px;
+		display: inline-block;
+		width: 384px;
+	}
 
-#global_mainarea h2 {
-	text-align: center;
-}
+	#piscivian_links {
+		margin: 20px 10px 40px 10px;
+		display: inline-block;
+		width: 384px;
+	}
 
-/* Individual Unit Page */
-.unit {
-	/* margin: 30px; */
-	width: 740px;
-	margin: 0 auto;
-	display: none;
-}
+	#global_mainarea h2 {
+		text-align: center;
+	}
 
-#unit_top {
-	width: 100%;
-	height: 450px;
-}
+	/* Individual Unit Page */
+	.unit {
+		/* margin: 30px; */
+		width: 740px;
+		margin: 0 auto;
+		display: none;
+	}
 
-#unit_left {
-	float: left;
-	height: 411px;
-	width: 150px;
-	text-align: center;
-}
+	#unit_top {
+		width: 100%;
+		height: 450px;
+	}
 
-.unit_name_humans {
-	font-family: Times New Roman, serif;
-	font-size: 1.5em;
-	color: red;
-}
+	#unit_left {
+		float: left;
+		height: 411px;
+		width: 150px;
+		text-align: center;
+	}
 
-.unit_name_piscivians {
-	font-family: Times New Roman, serif;
-	font-size: 1.5em;
-	color: blue;
-}
+	.unit_name_humans {
+		font-family: Times New Roman, serif;
+		font-size: 1.5em;
+		color: red;
+	}
 
-#unit_left img {
-	width: 100%;
-	height: 380px;
-}
+	.unit_name_piscivians {
+		font-family: Times New Roman, serif;
+		font-size: 1.5em;
+		color: blue;
+	}
 
-#unit_right {
-	height: 411px;
-}
+	#unit_left img {
+		width: 100%;
+		height: 380px;
+	}
 
-#unit_stats_humans {
-	float: left;
-	margin-left: 40px;
-}
+	#unit_right {
+		height: 411px;
+	}
 
-#unit_stats_piscivians {
-	float: left;
-	margin-left: 40px;
-}
+	#unit_stats_humans {
+		float: left;
+		margin-left: 40px;
+	}
 
-#unit_stats_humans .stats_title {
-	font-family: Times New Roman, serif;
-	font-size: 1.1em;
-	font-weight: bold;
-	text-decoration: underline;
-	color: red;
-}
+	#unit_stats_piscivians {
+		float: left;
+		margin-left: 40px;
+	}
 
-#unit_stats_piscivians .stats_title {
-	font-family: Times New Roman, serif;
-	font-size: 1.1em;
-	font-weight: bold;
-	text-decoration: underline;
-	color: blue;
-}
+	#unit_stats_humans .stats_title {
+		font-family: Times New Roman, serif;
+		font-size: 1.1em;
+		font-weight: bold;
+		text-decoration: underline;
+		color: red;
+	}
 
-.left {
-	float: left;
-	text-align: left;
-	margin-right: 20px;
-}
+	#unit_stats_piscivians .stats_title {
+		font-family: Times New Roman, serif;
+		font-size: 1.1em;
+		font-weight: bold;
+		text-decoration: underline;
+		color: blue;
+	}
 
-.right {
-	float: left;
-	text-align: right;
-	margin-right: 20px;
-}
+	.left {
+		float: left;
+		text-align: left;
+		margin-right: 20px;
+	}
 
-#unit_video {
-	float: left;
-	margin-top: 20px;
-	margin-left: 30px;
-	margin-bottom: 20px;
-}
+	.right {
+		float: left;
+		text-align: right;
+		margin-right: 20px;
+	}
 
-#unit_buttons {
-	float: left;
-	margin-left: 5px;
-	margin-top: 54.5px;
-}
+	#unit_video {
+		float: left;
+		margin-top: 20px;
+		margin-left: 30px;
+		margin-bottom: 20px;
+	}
 
-#unit_buttons img {
-	margin-bottom: 5px;
-	width: 64px;
-	border-width: 3px;
-	border-color: black;
-}
+	#unit_buttons {
+		float: left;
+		margin-left: 5px;
+		margin-top: 54.5px;
+	}
 
-#unit_abilities {
-	margin-bottom: 20px;
-	width: 100%;
-}
+	#unit_buttons img {
+		margin-bottom: 5px;
+		width: 64px;
+		border-width: 3px;
+		border-color: black;
+	}
 
-#unit_abilities #title_humans {
-	font-family: Times New Roman, serif;
-	font-size: 1.5em;
-	color: red;
-}
+	#unit_abilities {
+		margin-bottom: 20px;
+		width: 100%;
+	}
 
-#unit_abilities #title_piscivians {
-	font-family: Times New Roman, serif;
-	font-size: 1.5em;
-	color: blue;
-}
+	#unit_abilities #title_humans {
+		font-family: Times New Roman, serif;
+		font-size: 1.5em;
+		color: red;
+	}
 
-.ability {
-	margin-bottom: 30px;
-}
+	#unit_abilities #title_piscivians {
+		font-family: Times New Roman, serif;
+		font-size: 1.5em;
+		color: blue;
+	}
 
-.ability img {
-	float: left;
-}
+	.ability {
+		margin-bottom: 30px;
+	}
 
-.ability_desc {
-	margin-left: 80px;
-}
+	.ability img {
+		float: left;
+	}
 
-.ability_desc .name_humans {
-	font-family: Times New Roman, serif;
-	font-size: 1.2em;
-	color: red;
-}
+	.ability_desc {
+		margin-left: 80px;
+	}
 
-.ability_desc .name_piscivians {
-	font-family: Times New Roman, serif;
-	font-size: 1.2em;
-	color: blue;
+	.ability_desc .name_humans {
+		font-family: Times New Roman, serif;
+		font-size: 1.2em;
+		color: red;
+	}
+
+	.ability_desc .name_piscivians {
+		font-family: Times New Roman, serif;
+		font-size: 1.2em;
+		color: blue;
+	}
+
 }
