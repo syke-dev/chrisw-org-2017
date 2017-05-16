@@ -12,9 +12,8 @@ features:
       - "	 get a straight flush in poker"
       - "	 change your avatar"
     images:
-      - "/assets/images/megafamecasino/videopoker/quadcrush1.png"
-      - "/assets/images/megafamecasino/videopoker/quadcrush2.png"
-      - "/assets/images/megafamecasino/videopoker/quadcrush3.png"
+      - "/assets/images/megafamecasino/challenges/challenge-menu.jpg"
+      - "/assets/images/megafamecasino/challenges/challenge-completed.jpg"
 
   friends:
     title: "Friends System"
@@ -36,9 +35,12 @@ features:
       - "All poker actions including chat are REST requests to the server running the room."
       - "The client gets game updates via polling. Ideally this would be changed to a push-based system, but don't have any issues with the current system to justify the work needed."
     images:
-      - "/assets/images/megafamecasino/poker/holdem.png"
-      - "/assets/images/megafamecasino/poker/shootout.png"
-      - "/assets/images/megafamecasino/poker/headsup.png"
+      - "/assets/images/megafamecasino/poker/poker-preflop.jpg"
+      - "/assets/images/megafamecasino/poker/poker-river.jpg"
+      - "/assets/images/megafamecasino/poker/poker-levelup.jpg"
+      - "/assets/images/megafamecasino/poker/shootout-blinds.jpg"
+      - "/assets/images/megafamecasino/poker/shootout-finalhand.jpg"
+      - "/assets/images/megafamecasino/poker/shootout-win.jpg"
 
   quadcrush:
     title: "Quad Crush Video Poker"
@@ -46,9 +48,9 @@ features:
     desc:
       - "Quad Crush is similar to normal video poker, except the user chooses the suits and ranks independently, then the result of both choices are combined to form the final hand."
     images:
-      - "/assets/images/megafamecasino/videopoker/quadcrush1.png"
-      - "/assets/images/megafamecasino/videopoker/quadcrush2.png"
-      - "/assets/images/megafamecasino/videopoker/quadcrush3.png"
+      - "/assets/images/megafamecasino/videopoker/quadcrush-suits.jpg"
+      - "/assets/images/megafamecasino/videopoker/quadcrush-ranks.jpg"
+      - "/assets/images/megafamecasino/videopoker/quadcrush-win.jpg"
 
   spectate:
     title: "Poker Tournaments Spectator System"
@@ -59,9 +61,9 @@ features:
       - "The server will then return one minute of actions for 10 minutes ago."
       - "The client will then pump each action into the client simulation at the correct time."
     images:
-      - "/assets/images/megafamecasino/spectate/spec5.png"
-      - "/assets/images/megafamecasino/spectate/spec6.png"
-      - "/assets/images/megafamecasino/spectate/spec9.png"
+      - "/assets/images/megafamecasino/spectate/spectate1.jpg"
+      - "/assets/images/megafamecasino/spectate/spectate2.jpg"
+      - "/assets/images/megafamecasino/spectate/spectate3.jpg"
 
   template:
     title: ""
