@@ -1,0 +1,31 @@
+
+// General body text
+@mixin font-default-general {
+	color: rgb(34, 34, 34);
+	// color: rgb(68, 68, 68);
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	line-height: 30.6px;
+}
+
+@mixin font-default-titles {
+	color: rgb(34, 34, 34);
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 40px;
+	line-height: 44.6px;
+}
+
+@mixin font-default-general-bold {
+	color: rgb(51, 51, 51);
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	line-height: 30.6px;
+	font-weight: bold;
+}
+
+@mixin font-default-general-alternate {
+	color: rgb(68, 68, 68);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 20px;
+	line-height: 28px;
+}
