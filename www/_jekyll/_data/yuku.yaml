@@ -1,0 +1,78 @@
+features:
+
+  search:
+    title: "Sitewide Search"
+    what: "Added ability to search all forum contents."
+    desc:
+      - "Prior to this work, Yuku only allowed searching a single forum's content with a mysql-based solution."
+      - "Using my prior experience with Solr on Mega Fame, I extended our content rating system to import new content into a clustered Solr installation on EC2."
+      - "I also wrote scripts to import historical data from mysql databases into solr."
+      - "With this new system, users could now search all content on Yuku, based on attributes such as <b>title</b>, <b>text</b>, <b>forum</b>, <b>user</b> and <b>date</b>"
+    images:
+
+      - title: ""
+        src: "/assets/images/megafamecasino/challenges/challenge-menu.jpg"
+        caption: ""
+
+      - title: ""
+        src: "/assets/images/megafamecasino/challenges/challenge-completed.jpg"
+        caption: ""
+
+  mobile:
+    title: "Mobile App"
+    what: "Built new iOS app for Yuku."
+    desc:
+      - "Starting from our Phonegap app for Mega Fame, I reconfigured and changed it to work foe Yuku."
+      - "Added a native solution for tracking browser history and added in a native swipe feature to return to previous pages."
+      - "Added a native solution for handling malicious ads that were hijacking the application and redirecting the user outside of the app."
+    images:
+
+      - title: ""
+        src: "/assets/images/megafamecasino/challenges/challenge-menu.jpg"
+        caption: ""
+
+      - title: ""
+        src: "/assets/images/megafamecasino/challenges/challenge-completed.jpg"
+        caption: ""
+
+  tiles:
+    title: "Tile Interface"
+    what: "Helped to create a new tile-based interface to use on yuku.com"
+    desc:
+      - "Integrated packery.js into yuku to handle grid layout of tiles and hooked up infinite scrolling pagination."
+      - "Worked on a system to normalize content so that different kinds of content (posts, replies, gallery images) could be rendered into tiles.
+         This allowed searches to display any content that was indexed."
+    images:
+
+      - title: ""
+        src: "/assets/images/megafamecasino/challenges/challenge-menu.jpg"
+        caption: ""
+
+      - title: ""
+        src: "/assets/images/megafamecasino/challenges/challenge-completed.jpg"
+        caption: ""
+
+  misc:
+    title: "Other Features"
+    what: ""
+    desc:
+      - "<b>New Landing Page:</b> created a new landing page which showed `quality` content from pre-approved forums."
+      - "<b>Profile Page:</b> added new activity page to the user profile page which displayed all their recent posts and replies."
+      - "<b>Forum Banners:</b> implemented feature for users to be able to upload an image and description of their forum and make it searchable."
+      - "<b>Galleries:</b> helped other engineer with small features and bug fixes on new tile-based gallery."
+    images:
+
+      - title: ""
+        src: "/assets/images/megafamecasino/challenges/challenge-menu.jpg"
+        caption: ""
+
+      - title: ""
+        src: "/assets/images/megafamecasino/challenges/challenge-completed.jpg"
+        caption: ""
+
+# Sitewide Search
+# Tile Interface
+# New Mobile App
+# New Landing Page
+# New Profile Page
+# New User Galleries

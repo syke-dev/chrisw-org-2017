@@ -1,0 +1,110 @@
+---
+images:
+
+  - title: ""
+    src: "/assets/images/yuku/screen480x480.jpg"
+    caption: ""
+
+  - title: ""
+    src: "/assets/images/yuku/screen480x480 (1).jpg"
+    caption: ""
+
+  - title: ""
+    src: "/assets/images/yuku/screen480x480 (2).jpg"
+    caption: ""
+
+  - title: ""
+    src: "/assets/images/yuku/screen480x480 (2).jpg"
+    caption: ""
+
+  - title: ""
+    src: "/assets/images/yuku/screen480x480 (2).jpg"
+    caption: ""
+
+  - title: ""
+    src: "/assets/images/yuku/screen480x480 (2).jpg"
+    caption: ""
+---
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		
+		<title>Yuku</title>
+
+		<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/project-feature.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/buttons.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/bloodtide/landing.css" />
+
+		{% include utility/carousel.html %}
+
+		<style>
+			img {
+				max-width: 100%;
+				max-height: 100%;
+			}
+
+			.slick-prev:before, .slick-next:before { 
+				color:red !important;
+			}
+
+			.slick-prev {
+				left: 25px !important;
+				z-index: 5 !important;
+			}
+
+			.slick-next {
+				right: 25px !important;
+				z-index: 5 !important;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+	
+		{% include navbar.html %}
+				
+		<div class="begin"></div>
+
+		<section class="white intro">
+			<div class="container">
+
+				<img src="/assets/images/yuku/logo.jpg">
+				<div class="text">
+					During my time at Plaor, I assisted an engineer at our parent company to implement features for their forums website yuku.com
+					<p>
+					
+				</div>
+
+			</div>
+		</section>
+
+		<section class="white">
+			<div class="container">
+				{% include utility/carousel2.html images=page.images max-width="1600px" height="400px" margin="0 auto" %}
+			</div>
+		</section>
+
+		<div class="sep"></div>
+
+		{% include utility/project-feature.html data=site.data.yuku.features.search %}
+
+		<div class="sep"></div>
+
+		{% include utility/project-feature.html data=site.data.yuku.features.mobile %}
+
+		<div class="sep"></div>
+
+		{% include utility/project-feature.html data=site.data.yuku.features.tiles %}
+
+		<div class="sep"></div>
+
+		{% include utility/project-feature.html data=site.data.yuku.features.misc %}
+
+	</body>
+
+</html>
