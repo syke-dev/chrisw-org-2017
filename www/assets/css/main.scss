@@ -1,9 +1,12 @@
 ---
 ---
 
+@import 'fonts';
+
 body {
 	padding: 0px;
 	margin: 0px;
+	@include font-default-general;
 }
 
 .sep {
@@ -116,41 +119,4 @@ section.project {
 		}
 	}
 	
-}
-
-// gray theme
-
-
-section.gray {
-	background-color: rgb(51, 51, 51);
-	color: white;
-}
-
-
-// red theme
-
-section.red {
-	background-color: rgb(247, 87, 91);
-	color: white;
-}
-
-// white theme
-
-section.white {
-	background-color: white;
-	color: black;
-}
-
-// off-white theme
-
-section.off-white {
-	background-color: #fafafa;
-	color: black;
-}
-
-// dark grey theme
-
-section.dark-grey {
-	background-color: #1D1D1D;
-	color: white;
 }
