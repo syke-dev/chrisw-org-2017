@@ -89,4 +89,14 @@
 		box-shadow: 0 0 40px 40px $dark-green inset, 0 0 0 0 $dark-green;
 		transition: all 150ms ease-in-out;
 	}
+
+	button.light-blue {
+		$light-blue: rgb(101, 202, 255);
+
+		border-color: $light-blue;
+		color: #fff;
+		box-shadow: 0 0 40px 40px $light-blue inset, 0 0 0 0 $light-blue;
+		transition: all 150ms ease-in-out;
+	}
+
 }
