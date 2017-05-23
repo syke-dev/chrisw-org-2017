@@ -11,11 +11,7 @@ features:
     images:
 
       - title: ""
-        src: "/assets/images/megafamecasino/challenges/challenge-menu.jpg"
-        caption: ""
-
-      - title: ""
-        src: "/assets/images/megafamecasino/challenges/challenge-completed.jpg"
+        src: "/assets/images/yuku/forum-search.jpg"
         caption: ""
 
   mobile:
@@ -28,11 +24,7 @@ features:
     images:
 
       - title: ""
-        src: "/assets/images/megafamecasino/challenges/challenge-menu.jpg"
-        caption: ""
-
-      - title: ""
-        src: "/assets/images/megafamecasino/challenges/challenge-completed.jpg"
+        src: "/assets/images/yuku/mobile.jpg"
         caption: ""
 
   tiles:
@@ -45,11 +37,7 @@ features:
     images:
 
       - title: ""
-        src: "/assets/images/megafamecasino/challenges/challenge-menu.jpg"
-        caption: ""
-
-      - title: ""
-        src: "/assets/images/megafamecasino/challenges/challenge-completed.jpg"
+        src: "/assets/images/yuku/gallery.jpg"
         caption: ""
 
   misc:
@@ -63,16 +51,5 @@ features:
     images:
 
       - title: ""
-        src: "/assets/images/megafamecasino/challenges/challenge-menu.jpg"
+        src: "/assets/images/yuku/landing-page.jpg"
         caption: ""
-
-      - title: ""
-        src: "/assets/images/megafamecasino/challenges/challenge-completed.jpg"
-        caption: ""
-
-# Sitewide Search
-# Tile Interface
-# New Mobile App
-# New Landing Page
-# New Profile Page
-# New User Galleries
