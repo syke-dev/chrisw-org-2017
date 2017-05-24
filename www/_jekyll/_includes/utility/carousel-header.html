@@ -1,5 +1,6 @@
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="/assets/css/carousel.css"/>
 
 <script type="text/javascript" src="//code.jquery.com/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
@@ -14,6 +15,7 @@
 			'right': 39
 		}
 
+		// A carousel that shows a single centered image at a time and can scroll left or right infinitely
 		$('.carousel.single-image').slick({
 			dots: true,
 			infinite: true,
@@ -23,6 +25,21 @@
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			cssEase: 'linear'
+		});
+
+		// A carousel that shows a several centered images at a time (depending on their size) and can scroll left or right infinitely
+		$('.carousel.multiple-images').slick({
+			dots: true,
+			infinite: true,
+			// lazyLoad: 'ondemand',
+			speed: 500,
+			// fade: true, -- lazy loading not working with fade
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			cssEase: 'linear',
+			centerMode: true,
+			// centerPadding: '0px',
+			xvariableWidth: true
 		});
 
 		// TODO: For some reason the left/right arrows effect the regular carousel as well?
