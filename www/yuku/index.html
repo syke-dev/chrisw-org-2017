@@ -38,7 +38,7 @@ images:
 		<link rel="stylesheet" type="text/css" href="/assets/css/buttons.css" />
 		<link rel="stylesheet" type="text/css" href="/assets/css/bloodtide/landing.css" />
 
-		{% include utility/carousel.html %}
+		{% include utility/carousel-header.html %}
 
 		<style>
 			img {
@@ -85,7 +85,7 @@ images:
 
 		<section class="white">
 			<div class="container">
-				{% include utility/carousel2.html images=page.images max-width="1600px" height="400px" margin="0 auto" %}
+				{% include utility/carousel-instance.html images=page.images max-width="1600px" height="400px" margin="0 auto" %}
 			</div>
 		</section>
 
