@@ -1,0 +1,42 @@
+<div class="carousel-container" style="max-width: {{ include.max-width }}; height: {{ include.height }}; margin: {{ include.margin }};">
+	
+	<div class="carousel {{ include.type }} standard"
+		disabled-style="max-width: {{ include.width }}; height: {{ include.height }}; margin: {{ include.margin }};">
+
+		{% for image in include.images %}
+		
+			<div>
+				<div>
+					<div class="image-title">{{ image.title }}</div>
+					<img data-lazy="{{ image.src }}">
+					<div class="image-caption">{{ image.caption }}</div>
+				</div>
+			</div>
+		
+		{% endfor %}
+
+	</div>
+
+	<div class="fullscreen-window">
+
+		<div class="carousel-wrapper">
+			<div class="carousel single-image fullscreen">
+			
+				{% for image in include.images %}
+				
+					<div>
+						<div class="image-wrapper">
+							<div class="image-title">{{ image.title }}</div>
+							<img data-lazy="{{ image.src }}">
+							<div class="image-caption">{{ image.caption }}</div>
+						</div>
+					</div>
+				
+				{% endfor %}
+			
+			</div>
+		</div>
+		
+	</div>
+
+</div>
