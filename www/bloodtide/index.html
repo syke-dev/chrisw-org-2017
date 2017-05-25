@@ -1,4 +1,25 @@
 ---
+field-commander-images:
+
+  - title: ""
+    src: "/assets/images/bloodtide/building-construction.jpg"
+    caption: ""
+
+  - title: ""
+    src: "/assets/images/bloodtide/tactical-commander.jpg"
+    caption: ""
+
+  - title: ""
+    src: "/assets/images/bloodtide/select-commander.jpg"
+    caption: ""
+
+tactical-commander-images:
+
+  - title: ""
+    src: "/assets/images/bloodtide/field-commander.jpg"
+    caption: ""
+
+
 ---
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -35,6 +56,8 @@
 			</div>
 		</section>
 
+		<center>Blood Tide was created using the C4 engine in C++. Development Time: ~8 months</center>
+
 		<div class="sep"></div>
 
 		<section class="white twomodes">
@@ -45,8 +68,7 @@
 				<div class="left column">
 					<div class="title">Tactical-Commander Mode</div>
 					<div class="title2">(RTS)</div>
-					<img src="http://bloodtide.chrisw.org/media/ConstructBuilding.jpg">
-					<!-- <img src="http://bloodtide.chrisw.org/media/Tactical-Commander.jpg"> -->
+					{% include utility/carousel.html images=page.field-commander-images type="single-image" max-width="1600px" height="400px" margin="0 auto" %}
 					<div class="desc">
 						<p>
 						<ul>
@@ -61,8 +83,7 @@
 				<div class="right column">
 					<div class="title">Field-Commander Mode</div>
 					<div class="title2">(Action RPG)</div>
-					<!-- <img src="http://bloodtide.chrisw.org/media/SelectCommander.jpg"> -->
-					<img src="http://bloodtide.chrisw.org/media/Field-Commander.jpg">
+					{% include utility/carousel.html images=page.tactical-commander-images type="single-image" max-width="1600px" height="400px" margin="0 auto" %}
 					<div class="desc">
 						<p>
 						<ul>
@@ -76,11 +97,6 @@
 			</div>
 		</section>
 
-		<br>
-		<center>
-		Blood Tide was created using the C4 engine in C++. Development Time: ~8 months
-		</center>
-		
 		<div class="sep"></div>
 
 		{% include bloodtide/units.html %}
