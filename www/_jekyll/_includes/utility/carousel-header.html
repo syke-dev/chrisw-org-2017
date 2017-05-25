@@ -46,14 +46,14 @@
 		$('.slick-list').click(function(e) {
 			
 			var selectedCarousel = $(e.currentTarget).closest('.carousel');
-			var fullscreenWindowId = selectedCarousel.attr('data-fullscreenWindowId');
+			
+			var carouselContainer = selectedCarousel.closest('.carousel-container');
+			var fullscreenWindow = carouselContainer.find('.fullscreen-window');
+			var fullscreenCarousel = fullscreenWindow.find('.carousel');
 
 			if (selectedCarousel.hasClass('.fullscreen')) {
 				return;
 			}
-			
-			var fullscreenWindow = $(document.getElementById(fullscreenWindowId));
-			var fullscreenCarousel = fullscreenWindow.find('.carousel');
 
 			fullscreenWindow.addClass('visible');
 			fullscreenCarousel.slick('slickGoTo', selectedCarousel.slick('slickCurrentSlide'), true);
