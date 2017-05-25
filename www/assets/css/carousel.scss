@@ -1,25 +1,30 @@
 ---
 ---
 
-// override default slickjs styling
+// styling for the extended zoom-in functionality
 .carousel {
 
-	// color the next and previous buttons (defaults to white)
-	.slick-prev:before, .slick-next:before { 
-		color:red !important;
-	}
-	
 	// outline and hover highlight
 	.slick-list {
+
 		box-shadow: 0px 0px 0px 3px rgba(white, 0.75), rgba(blue, 0.4) 0 0 25px;
 
 		&:hover {
 			box-shadow: 0px 0px 0px 3px rgba(black, 0.75), rgba(blue, 0.4) 0 0 25px;
 		}
+
+		cursor: zoom-in;
+		-webkit-cursor: zoom-in;
+
+		img {
+			z-index: -1;
+		}
+
 	}
 
 }
 
+// styling for images inside the carousel
 .carousel {
 
 	// force images to fit in the box
@@ -33,15 +38,6 @@
 		width: 100%;
 	}
 
-	// TODO clicking
-	.slick-list {
-		cursor: zoom-in;
-		-webkit-cursor: zoom-in;
-
-		img {
-			z-index: -1;
-		}
-	}
 }
 
 // fullscreen carousel stylinh
