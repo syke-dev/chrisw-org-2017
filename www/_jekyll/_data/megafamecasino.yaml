@@ -1,3 +1,37 @@
+technologies:
+
+  languages:
+    - "Html5"
+    - "Css3"
+    - "JavaScript"
+    - "Java"
+    - "Objective-C"
+    - "XML"
+
+  libraries:
+    - "Google Web Toolkit"
+    - "Spring"
+    - "Hibernate"
+    - "iOS"
+    - "Android"
+    - "XMPP"
+
+  server:
+    - "Jetty"
+    - "Mysql"
+    - "Nginx"
+    - "Solr"
+    - "Cassandra"
+    - "Ejabberd"
+
+  aws:
+    - "EC2"
+    - "RDS"
+    - "ELB"
+    - "Route 53"
+    - "CloudFront"
+    - "CloudWatch"
+
 features:
 
   challenges:

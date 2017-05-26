@@ -9,6 +9,23 @@ body {
 	@include font-default-general;
 }
 
+.section-title {
+	@include font-default-titles;
+	margin: 20px;
+}
+
+.technologies {
+	text-align: center;
+}
+
+.technologies ul {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	margin: 30px 35px 0px 35px;
+}
+
+
 .sep {
 	max-width: 1240px;
 	height: 2px;

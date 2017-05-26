@@ -6,11 +6,12 @@
 
 	<head>
 		
-		<title>chrisw</title>
+		<title>Mega Fame Casino</title>
 
 		<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
 		<link rel="stylesheet" type="text/css" href="/assets/css/project-feature.css" />
 		<link rel="stylesheet" type="text/css" href="/assets/css/buttons.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/bloodtide/landing.css" />
 
 		{% include utility/carousel-header.html %}
 
@@ -21,6 +22,36 @@
 		{% include navbar.html %}
 				
 		<div class="begin"></div>
+
+		<section class="white intro">
+			<div class="container">
+
+				<img src="/assets/images/megafamecasino/logo.jpg">
+				<div class="text">
+					Mega Fame Casino is a social casino game where players can play poker, slots and video poker.
+					Players can login daily for rewards, exchange gifts with in-game and Facebook friends
+					and complete challenges to advance along the game map.
+					The game runs on iOS and Android using PhoneGap and on Facebook on PC.
+					<br><br>
+					Development began at the start of 2012 when I joined DoubleTap Games (now Plaor) and was launched in the fall that year with the poker product.
+				</div>
+			</div>
+		</section>
+
+		<div class="sep"></div>
+
+		<section class="white technologies">
+			<div class="container">
+				<div class="section-title">Technologies Used</div>
+				{% include utility/ul.html list=site.data.megafamecasino.technologies.languages %}
+				{% include utility/ul.html list=site.data.megafamecasino.technologies.libraries %}
+				{% include utility/ul.html list=site.data.megafamecasino.technologies.server %}
+				{% include utility/ul.html list=site.data.megafamecasino.technologies.aws %}
+
+			</div>
+		</section>
+
+		<div class="sep"></div>
 
 		{% include utility/project-feature.html data=site.data.megafamecasino.features.poker %}
 
