@@ -1,10 +1,7 @@
 ---
 ---
 
-body {
-	padding: 0px;
-	margin: 0px;
-}
+@import 'fonts';
 
 section.project-feature {
 	position: relative;
@@ -105,11 +102,11 @@ section.project-feature-two-column {
 
 	.column {
 
-		$left-col-width: 450px;
-		$left-col-margin: 50px;
+		$left-col-width: 500px;
+		$left-col-margin: 20px;
 
-		$right-col-width: 533px;
-		$right-col-margin: 75px;
+		$right-col-width: 600px;
+		$right-col-margin: 100px;
 
 		$breakpoint-min-width: $left-col-width + $left-col-margin + $right-col-width + $right-col-margin;
 
@@ -141,9 +138,15 @@ section.project-feature-two-column {
 	}
 	
 	.title {
-		max-width: 400px;
+		@include font-default-titles;
+		// max-width: 400px;
+		padding-bottom: 20px;
 		border-bottom: 2px solid black;
-		margin-bottom: 20px;
+	}
+	
+	.what {
+		@include font-default-general-bold;
+		margin: 20px 0px 50px 0px;
 	}
 	
 	.content {

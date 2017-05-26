@@ -112,7 +112,7 @@ features:
         caption: "foo"
 
   spectate:
-    title: "Poker Tournaments Spectator System"
+    title: "Spectator System"
     what: "Built a system that allows players to spectate celebrity poker tournaments on a 10 minute delay."
     desc:
       - "The system works by having each poker table in the tournament store every action in Cassandra."

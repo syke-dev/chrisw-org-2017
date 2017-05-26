@@ -4,14 +4,13 @@
 		<div class="left column">
 		
 			<div class="title">
-				<h1>{{ include.data.title }}</h1>
+				<div>{{ include.data.title }}</div>
 			</div>
 
 			<div class="content">
-				<h2>{{ include.data.what }}</h2>
-				<br>
+				<div class="what">{{ include.data.what }}</div>
 				<ul>
-			
+
 					{% for entry in include.data.desc %}
 					
 						<li>{{ entry }}</li>
