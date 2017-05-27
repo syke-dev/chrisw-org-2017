@@ -1,0 +1,66 @@
+components:
+
+  buzzer:
+
+    images:
+
+      - title: ""
+        src: "/assets/images/blindman/Buzzer.jpg"
+        caption: "A buzzer is used to provide audio cues when the player kills a monster, takes damage and dies."
+
+  nunchuk:
+
+    images:
+
+      - title: ""
+        src: "/assets/images/blindman/Nunchuk.jpg"
+        caption: "A nunchuk is used for attacking monsters.
+                  The player can swing the nunchuck, which initiations an attack in the direction the player is facing."
+
+
+  gyro:
+
+    images:
+
+      - title: ""
+        src: "/assets/images/blindman/Gyro.jpg"
+        caption: "There is a 1-axis gyro located on the top-middle of the hat.
+                  It allows us to measure the rotation of the player's head.
+                  This allows the player to rotate his avatar in the game world."
+
+  ten-segment-display:
+
+    images:
+
+      - title: ""
+        src: "/assets/images/blindman/TenSegmentDisplay.jpg"
+        caption: "A ten-segment display is attached to the rim of the hat.
+                  It is used primarily to display the health of the player.
+                  It is also used to display cool effects when the game is starting up and the player is dying."
+
+  unity:
+
+    images:
+
+      - title: ""
+        src: "/assets/images/blindman/GameInUnity.jpg"
+        caption: "The user interface for the Unity game is there for testing and so that other players can see what it happening in the game.
+                  The 5 white spheres represent the 5 vibration motors on the hat.
+                  The player's avatar is the black cylinder in the middle.
+                  Right now, the player is attacking, which is displayed via the yellow cone in front of the player.
+                  The black dot approaching from the player's left is a zombie."
+
+  vibration-motors:
+
+    images:
+
+      - title: ""
+        src: "/assets/images/blindman/VibrationMotors.jpg"
+        caption: "There are five vibration motors attached to the inside of the hat.
+                  When the player dons the hat, there will be three motors resting on the front of the player's head and two motors that will be on the back / sides of the player's head.
+                  When zombies approach, the motor in the direction of the zombie will begin to vibrate.
+                  The closer the zombie gets, the more the motor will vibrate.
+                  If a zombie is positioned in-between two motors, the total power will be distributed between them.
+                  This allows the player to perceive where the zombies are around him and how close they are to him."
+
+

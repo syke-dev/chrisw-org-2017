@@ -34,6 +34,8 @@ h2 {
 
 .twomodes {
 
+	$width: 700px;
+
 	.container {
 		text-align: center;
 	}
@@ -43,7 +45,10 @@ h2 {
 	}
 
 	.column {
-		width: 700px;
+		width: $width;
+	}
+
+	.column.left, .column.right {
 		margin: 40px;
 
 		display: inline-block;
@@ -69,6 +74,12 @@ h2 {
 
 	.right.column {
 
+	}
+
+	// A centered middle column
+	.middle.column {
+		text-align: center;
+		margin: 0 auto;
 	}
 
 	img {

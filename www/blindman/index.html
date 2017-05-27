@@ -1,0 +1,95 @@
+---
+---
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		
+		<title>Blind Man's Last Stand</title>
+
+		<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/project-feature.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/buttons.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/bloodtide/landing.css" />
+
+		{% include utility/carousel-header.html %}
+
+	</head>
+
+	<body>
+	
+		{% include navbar.html %}
+				
+		<div class="begin"></div>
+
+		<section class="white intro">
+			<div class="container">
+
+				<img src="/assets/images/blindman/logo.jpg">
+				<div class="text">
+Blind Man's Last Stand
+Blind Man's Last Stand is a zombie survival game that takes place entirely on the player's hat. 
+In this game, however, the player cannot see the zombies and must rely on other senses to survive against the never-ending horde of zombies.
+
+
+Overview
+Blind Man's Last Stand is a zombie survival game that takes place entirely on the player's hat. 
+In this game, however, the player cannot see the zombies and must rely on other senses to survive against the never-ending horde of zombies.
+
+Gameplay
+Zombies approach the player from all directions at regular intervals. 
+The player has to kill the zombies before they reach his position, or else he will take damage. 
+The player cannot move and he cannot see the zombies. 
+Instead, the player must rely on the sense of touch to locate where the zombies are. 
+The player can only attack in a small cone in front of him, so he must rotate in-place in order to face the zombies before attacking. 
+The goal of the game is to last as long as possible, however, zombies will always triumph in the end.
+				</div>
+			</div>
+		</section>
+
+		<center>Blind Man's Last Stand was created using the C4 engine in C++. Development Time: ~8 months</center>
+
+		<div class="sep"></div>
+
+
+
+
+		<section class="white twomodes">
+			<div class="container">
+			
+				<div class="section-title">Components</div>
+
+				<div class="left column">
+
+
+					{% include utility/carousel.html images=site.data.blindman.components.ten-segment-display.images type="single-image" max-width="1600px" height="400px" margin="0 auto" %}
+
+					{% include utility/carousel.html images=site.data.blindman.components.nunchuk.images type="single-image" max-width="1600px" height="400px" margin="0 auto" %}
+
+					{% include utility/carousel.html images=site.data.blindman.components.vibration-motors.images type="single-image" max-width="1600px" height="400px" margin="0 auto" %}
+
+				</div>
+
+				<div class="right column">
+
+					{% include utility/carousel.html images=site.data.blindman.components.gyro.images type="single-image" max-width="1600px" height="400px" margin="0 auto" %}
+
+					{% include utility/carousel.html images=site.data.blindman.components.buzzer.images type="single-image" max-width="1600px" height="400px" margin="0 auto" %}
+
+					{% include utility/carousel.html images=site.data.blindman.components.unity.images type="single-image" max-width="1600px" height="400px" margin="0 auto" %}
+
+				</div>
+
+				<div class="middle column">
+
+					
+
+				</div>
+
+			</div>
+		</section>
+
+	</body>
+
+</html>
