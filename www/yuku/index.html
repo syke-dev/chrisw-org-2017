@@ -40,28 +40,6 @@ images:
 
 		{% include utility/carousel-header.html %}
 
-		<style>
-			img {
-				max-width: 100%;
-				max-height: 100%;
-			}
-
-			.slick-prev:before, .slick-next:before { 
-				color:red !important;
-			}
-
-			.slick-prev {
-				left: 25px !important;
-				z-index: 5 !important;
-			}
-
-			.slick-next {
-				right: 25px !important;
-				z-index: 5 !important;
-			}
-
-		</style>
-
 	</head>
 
 	<body>
@@ -85,7 +63,7 @@ images:
 
 		<section class="white">
 			<div class="container">
-				{% include utility/carousel-instance.html images=page.images max-width="1600px" height="400px" margin="0 auto" %}
+				{% include utility/carousel.html images=page.images max-width="1600px" height="400px" margin="0 auto" %}
 			</div>
 		</section>
 
