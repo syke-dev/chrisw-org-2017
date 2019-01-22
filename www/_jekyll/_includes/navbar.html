@@ -53,11 +53,16 @@
 
 	.navbar-center li {
 		display: inline-block;
-		padding: 0px 5px 0px 5px;
+		padding: 0px 10px 0px 10px;
 		transition: background-color 1s;
 	}
 
 	/* right */
+
+	/* if have Resume on right */
+	svg {
+		margin-bottom: 6px;
+	}
 
 	.icon-github {
 		fill: currentColor;
@@ -125,7 +130,10 @@
 	</div>
 
 	<div class="navbar-right">
-		<a href="{{ site.github_url }}">
+
+		<a target="_blank" href="//downloads.chrisw.org/chrisw_resume.pdf">Resume</a>
+
+		<a target="_blank" href="{{ site.github_url }}">
 			<svg class="icon-github" height="32" version="1.1" viewBox="0 0 16 16" width="32">
 				<path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 
 				0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 
@@ -135,7 +143,7 @@
 			</svg>
 		</a>
 
-		<a href="{{ site.linkedin_url }}">
+		<a target="_blank" href="{{ site.linkedin_url }}">
 			<svg class="icon-linkedin" viewBox="0 50 512 512">
 				<path d="M150.65,100.682c0,27.992-22.508,50.683-50.273,50.683c-27.765,0-50.273-22.691-50.273-50.683
 				C50.104,72.691,72.612,50,100.377,50C128.143,50,150.65,72.691,150.65,100.682z M143.294,187.333H58.277V462h85.017V187.333z
@@ -144,15 +152,16 @@
 				s-41.689-109.131-99.934-109.131s-82.768,45.369-82.768,45.369V187.333z"/>
 			</svg>
 		</a>
+
 	</div>
 
 	<div>
 		<div class="navbar-center">
 			<ul>
-				<li><a href="/megafamecasino/">MegaFame</a></li>
+				<li><a href="/megafamecasino/">Mega&sdot;Fame</a></li>
 				<li><a href="/yuku/">Yuku</a></li>
-				<li><a href="/">Projects</a></li>
-				<li><a href="//downloads.chrisw.org/chrisw_resume.pdf">Resume</a></li>
+				<li><a href="/bloodtide/">Blood&sdot;Tide</a></li>
+				<li><a href="/">More</a></li>
 			</ul>
 		</div>
 	</div>
